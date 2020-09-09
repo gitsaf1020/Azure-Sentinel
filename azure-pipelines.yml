@@ -14,7 +14,7 @@ steps:
     resourceGroupName: 'SecOpsPlaybooks'
     location: 'East US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://github.com/gitsaf1020/Azure-Sentinel/blob/master/Playbooks/Get-Microsoft-Covid19-Indicators/C19ImportToSentinel.json'
+    csmFileLink: 'https://raw.githubusercontent.com/gitsaf1020/Azure-Sentinel/master/Playbooks/Get-Microsoft-Covid19-Indicators/C19ImportToSentinel.json'
     deploymentMode: 'Incremental'
 
 trigger:
