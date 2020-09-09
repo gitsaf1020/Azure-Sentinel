@@ -1,4 +1,15 @@
 # Starter pipeline
+- task: AzureResourceManagerTemplateDeployment@3
+  inputs:
+    deploymentScope: 'Resource Group'
+    azureResourceManagerConnection: 'SubscriptionARM'
+    subscriptionId: 'd0dfc620-0c41-4c20-83f6-f5dea5208f0f'
+    action: 'Create Or Update Resource Group'
+    resourceGroupName: 'SecOpsPlaybooks'
+    location: 'East US'
+    templateLocation: 'URL of the file'
+    csmFileLink: 'https://github.com/gitsaf1020/Azure-Sentinel/blob/master/Playbooks/Get-Microsoft-Covid19-Indicators/C19ImportToSentinel.json'
+    deploymentMode: 'Incremental'
 # Start with a minimal pipeline that you can customize to build and deploy your code.
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
